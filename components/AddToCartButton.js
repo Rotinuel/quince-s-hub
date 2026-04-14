@@ -33,7 +33,7 @@ export default function AddToCartButton({ product }) {
         <div className="flex items-center border border-[#ddd] rounded-xl overflow-hidden">
           <button onClick={() => setQty(q => Math.max(1, q - 1))}
             className="px-4 py-2 text-lg font-bold text-[#555] hover:bg-[#f5f0e8] transition-colors">−</button>
-          <span className="px-5 py-2 text-sm font-semibold min-w-[3rem] text-center">{qty}</span>
+          <span className="px-5 py-2 text-sm font-semibold min-w-12 text-center">{qty}</span>
           <button onClick={() => setQty(q => q + 1)}
             className="px-4 py-2 text-lg font-bold text-[#555] hover:bg-[#f5f0e8] transition-colors">+</button>
         </div>

@@ -85,7 +85,7 @@ export default function AdminLoginPage() {
           </form>
 
           <p className="text-[#444] text-xs text-center mt-6">
-            Default: admin / bazzan2024
+            Default: admin / quinces2024
           </p>
         </div>
       </div>

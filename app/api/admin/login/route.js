@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 import jwt from 'jsonwebtoken';
 
 const ADMIN_USER = process.env.ADMIN_USERNAME || 'admin';
-const ADMIN_PASS = process.env.ADMIN_PASSWORD || 'bazzan2024';
+const ADMIN_PASS = process.env.ADMIN_PASSWORD || 'quinces2024';
 const JWT_SECRET = process.env.JWT_SECRET || 'bazzan-secret-key-change-in-production';
 
 export async function POST(request) {

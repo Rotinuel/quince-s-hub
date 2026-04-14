@@ -39,7 +39,7 @@ export default async function ShopPage({ searchParams }) {
 
       <div className="flex gap-8">
         {/* Sidebar filters */}
-        <aside className="hidden lg:block w-52 flex-shrink-0">
+        <aside className="hidden lg:block w-52 shrink-0">
           <div className="sticky top-24 space-y-1">
             <p className="text-xs font-bold uppercase tracking-widest text-[#888] mb-3">Categories</p>
             {categories.map(cat => (
@@ -66,7 +66,7 @@ export default async function ShopPage({ searchParams }) {
               <Link
                 key={cat}
                 href={cat === 'All' ? '/shop' : `/shop?category=${encodeURIComponent(cat)}`}
-                className={`flex-shrink-0 px-4 py-1.5 rounded-full text-xs font-medium border transition-all ${
+                className={`shrink-0 px-4 py-1.5 rounded-full text-xs font-medium border transition-all ${
                   category === cat
                     ? 'bg-[#c9a84c] border-[#c9a84c] text-[#1a1a1a]'
                     : 'border-[#ddd] text-[#555] hover:border-[#c9a84c]'

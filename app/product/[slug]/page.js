@@ -56,7 +56,7 @@ export default async function ProductPage({ params }) {
         <span>/</span>
         <Link href={`/shop?category=${encodeURIComponent(product.category)}`} className="hover:text-[#c9a84c] transition-colors">{product.category}</Link>
         <span>/</span>
-        <span className="text-[#1a1a1a] truncate max-w-[200px]">{product.name}</span>
+        <span className="text-[#1a1a1a] truncate max-w-50">{product.name}</span>
       </nav>
 
       {/* Main product layout */}
